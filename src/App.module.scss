@@ -1,0 +1,41 @@
+@import "./Variables.scss";
+
+//variables
+$prmary-color:rgb(255, 94, 0);
+$colors:(
+    "title":rgb(255, 174, 0),
+    "primary":rgb(255, 94, 0),
+    "secondary":blue,
+);
+
+//methods
+@mixin flexContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+}
+
+
+// ------------------  App.module.scss ------------------
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.app{
+@include flexContainer();
+height: 100vh;
+width: 100vw;
+font-size: 40px;
+    background-color: rgb(45, 44, 44);
+    h1{
+        color: map-get($colors, "title");
+    }
+    p{
+        color: map-get($colors, "primary")
+    }
+}
+.nav-div{
+    @extend .app;
+}
+
