@@ -1,7 +1,7 @@
-import Main from './Components/Home';
-import About from './Components/About';
-import Contact from './Components/Contact';
-import Projects from './Components/Projects';
+import HomeDiv from './Components/Divs/HomeDiv';
+import ProjectsDiv from './Components/Divs/ProjectsDiv';
+import AboutDiv from './Components/Divs/AboutDiv';
+import ContactDiv from './Components/Divs/ContactDiv';
 import Project from './Components/Project';
 import Nav from './Components/Nav';
 import styles from './App.module.scss';
@@ -12,14 +12,13 @@ function App() {
   return (
     <>
     <div className={styles.app}>      
-      <Nav/>
-     
+      <Nav/>    
       <Routes>
-      <Route path="/" element ={<Main/>}/>
-      <Route path="/about" element ={ <About />}/>
-      <Route path="/projects" element ={<Projects />}/>
+      <Route path="/" element ={<HomeDiv/>}/>
+      <Route path="/projects" element ={<ProjectsDiv />}/>
       <Route path="/projects/:title" element ={<Project />}/>
-      <Route path="/contact" element ={   <Contact />}/>    
+      <Route path="/about" element ={ <AboutDiv />}/>     
+      <Route path="/contact" element ={   <ContactDiv />}/>    
       </Routes>
      
     </div>    
