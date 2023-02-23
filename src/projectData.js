@@ -4,7 +4,9 @@ export const projectData = [
     title: "Track My Dog",
     description: "I developed this app to allow users to track when you fed, took out, gave treat, scheduled vet apt, and grooming apt.",
     technologies: "React, Node, Express, Mongoose, MongoDB, Hosted with Render.com",
-    image: require("./Images/trackmydog.png"),
+    image: require("./Images/doglogin.png"),
+    image2: require("./Images/dogprofile.png"),
+    image3: require("./Images/trackmydog.png"),
     link: "https://www.trackmydog.app/",
 },
 {

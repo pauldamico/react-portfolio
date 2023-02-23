@@ -6,14 +6,14 @@ import Project from './Components/Project';
 import Nav from './Components/Nav';
 import styles from './App.module.scss';
 
-import {Routes, Route } from 'react-router-dom';
+import {Routes, Route, Switch } from 'react-router-dom';
 
 function App() {
   return (
     <>
     <div className={styles.app}>      
       <Nav/>
-      
+     
       <Routes>
       <Route path="/" element ={<Main/>}/>
       <Route path="/about" element ={ <About />}/>

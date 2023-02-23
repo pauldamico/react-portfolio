@@ -8,7 +8,9 @@ export default function Project (){
    <div className={styles.project}>
   <h1>{selectedProject?.title}</h1>
     <p>{selectedProject?.description}</p>
-    <img/>
+    <img src={selectedProject?.image}/>
+    <img src={selectedProject?.image2}/>
+    <img src={selectedProject?.image3}/>
 
     </div>
     </>)
