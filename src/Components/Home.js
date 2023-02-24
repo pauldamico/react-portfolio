@@ -9,7 +9,7 @@ export default function Home (){
 
     const hello = !toggle.hello ? "hello.world" : "Hello visitor"
     const name = !toggle.name ? 'my[name] = "Paul"' : "My name is Paul"
-    const developer = toggle.developer ? 'const I = "Web Developer"' : "I Am A Web Developer"
+    const developer = toggle.developer ? 'const i = "Web Developer"' : "A Web Developer"
   
     return (
   
